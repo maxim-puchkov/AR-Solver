@@ -1,8 +1,3 @@
-> Wiki: [Home](/home) • [Milestones](/milestones) • [Documentation](/documentation)
-
-<br /><br /><br />
-
-
 # ML Vision Solver · ~"ML Vision Solver" ~iOS ~""
 _Recognizing, converting, simplifying, canonicalizing, and evaluating Mathematical Expressions._
 
@@ -18,7 +13,7 @@ _Recognizing, converting, simplifying, canonicalizing, and evaluating Mathematic
 
 ---
 * [Wiki Pages](/../wikis/pages)
-* [Resources folder](/resources/)
+* [Resources Folder](/resources/)
 
 <br /><br />
 
@@ -26,7 +21,7 @@ _Recognizing, converting, simplifying, canonicalizing, and evaluating Mathematic
 
 
 
-## Legal
+##### Legal
 
 >>>
 ___License:__ proprietory software._
