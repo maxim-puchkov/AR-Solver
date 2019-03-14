@@ -1,4 +1,4 @@
-> Pages: [Home](/home) • [Milestones](/milestones) • [Documentation](/documentation)
+> Wiki: [Home](/home) • [Milestones](/milestones) • [Documentation](/documentation)
 
 <br /><br /><br />
 
