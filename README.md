@@ -1,3 +1,10 @@
+>>>
+Pages: [__Home__](/home) • [Milestones](/milestones) • [Documentation](/documentation)
+>>>
+
+<br /><br /><br />
+
+
 # ML Vision Solver · ~"ML Vision Solver" ~iOS ~""
 _Recognizing, converting, simplifying, canonicalizing, and evaluating Mathematical Expressions._
 
@@ -20,6 +27,18 @@ _Recognizing, converting, simplifying, canonicalizing, and evaluating Mathematic
 
 
 
----
 
-> ___Legal Notice__: proprietary software. See the [license agreement](../LICENSE)._
+## Legal
+
+>>>
+___License:__ proprietory software._
+
+_See the [License Agreement](../LICENSE)._
+>>>
+
+>>>
+___Trademark Attribution:__ all trademarks, service marks, trade names, 
+product names and logos are the property of their respective owners._
+
+_See the [Trademark Notice and Attribution](../NOTICE)._
+>>>
