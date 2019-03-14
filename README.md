@@ -4,4 +4,5 @@
 * [Documentation](/../wikis/documentation/)
 
 ---
-* [Pages](/../wikis/pages)
+* [Wiki Pages](/../wikis/pages)
+* [Resources folder](/resources/)
