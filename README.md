@@ -1,6 +1,4 @@
->>>
-Pages: [__Home__](/home) • [Milestones](/milestones) • [Documentation](/documentation)
->>>
+> Pages: [Home](/home) • [Milestones](/milestones) • [Documentation](/documentation)
 
 <br /><br /><br />
 
