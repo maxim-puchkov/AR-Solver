@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CREATEDBY</key>
+	<string>Created by ___FULLUSERNAME___ (___OWNER___).</string>
+	<key>CREATEDWITH</key>
+	<string>___IDE___; ___IDEPROPERTIES___</string>
+	<key>CREATEDON</key>
+	<string>___DATE___ at ___TIME___</string>
+	<key>IDE</key>
+	<string>___IDENAME___ v.___IDEVERSION___ (___IDEBUILD___)</string>
+	<key>IDENAME</key>
+	<string>Xcode</string>
+	<key>IDEVERSION</key>
+	<string>10.1</string>
+	<key>IDEBUILD</key>
+	<string>10B61</string>
+	<key>FULLPRODUCTNAME</key>
+	<string>___FULLORGANIZATIONNAME___.___WORKSPACENAME___.___PROJECTNAME___.___FILEBASENAME___</string>
+	<key>GITLABPUBLICURL</key>
+	<string>https://csil-git1.cs.surrey.sfu.ca/___SFUID___</string>
+	<key>APPSTOREPUBLICURL</key>
+	<string>https://itunes.apple.com/us/developer/maxim-puchkov/id1084095397</string>
+	<key>ORGANIZATIONPREFIX</key>
+	<string>com</string>
+	<key>FULLORGANIZATIONNAME</key>
+	<string>___ORGANIZATIONPREFIX___.___ORGANIZATIONNAME___</string>
+	<key>SFUEMAIL</key>
+	<string>___SFUID___@___SFUDOMAIN___</string>
+	<key>SFUDOMAIN</key>
+	<string>sfu.ca</string>
+	<key>SFUID</key>
+	<string>mpuchkov</string>
+	<key>COPYRIGHT</key>
+	<string>Copyright © ___YEAR___ ___OWNER___. All rights reserved.</string>
+	<key>FILEHEADER</key>
+	<string>
+//  ___FILENAME___
+//  ___PACKAGENAME___
+//  ___FULLPRODUCTNAME___
+//
+//  Package:             ___PACKAGENAME___
+//  Project:             ___PROJECTNAME___
+//  Workspace:           ___WORKSPACENAME___
+//  Organization:        ___ORGANIZATIONNAME___
+//  Prefix:              ___ORGANIZATIONPREFIX___
+//
+//  Author:              ___OWNER___ (___SFUEMAIL___)
+//  Full username:       ___FULLUSERNAME___
+//  Created on:          ___CREATEDON___
+//  System:              ___RUNNINGOS___
+//  Tools:               ___CREATEDWITH___
+//
+//  ___CREATEDBY___
+//  ___COPYRIGHT___
+//
+//
+//  1. ___GITLABPUBLICURL___
+//  2. ___APPSTOREPUBLICURL___
+//</string>
+	<key>OWNER</key>
+	<string>Maxim Puchkov</string>
+	<key>DEFAULT_FILEHEADER</key>
+	<string>
+//  ___FILENAME___
+//  ___PACKAGENAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  ___COPYRIGHT___
+//</string>
+	<key>RUNNINGOS</key>
+	<string>macOS ___RUNNINGMACOSVERSION___</string>
+	<key>RUNNINGSWIFT</key>
+	<string>Swift ___DEFAULTTOOLCHAINSWIFTVERSION___</string>
+	<key>IDEPROPERTIES</key>
+	<string>___RUNNINGSWIFT___</string>
+</dict>
+</plist>
