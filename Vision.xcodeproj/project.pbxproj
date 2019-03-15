@@ -14,7 +14,6 @@
 		84A0966A2239C87000876659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A096682239C87000876659 /* LaunchScreen.storyboard */; };
 		84A096752239C87000876659 /* VisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A096742239C87000876659 /* VisionTests.swift */; };
 		84A096802239C87000876659 /* VisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0967F2239C87000876659 /* VisionUITests.swift */; };
-		84B47178223AFB7B008488A4 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B47177223AFB7B008488A4 /* MainMenuViewController.swift */; };
 		84B4717A223B13C5008488A4 /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B47179223B13C5008488A4 /* IDETemplateMacros.plist */; };
 		84B4717C223B1646008488A4 /* MathematicalExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4717B223B1646008488A4 /* MathematicalExpression.swift */; };
 		84B4717E223B171F008488A4 /* MESimplifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4717D223B171F008488A4 /* MESimplifier.swift */; };
@@ -272,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B47178223AFB7B008488A4 /* MainMenuViewController.swift in Sources */,
 				84B4717C223B1646008488A4 /* MathematicalExpression.swift in Sources */,
 				84B4717E223B171F008488A4 /* MESimplifier.swift in Sources */,
 				84A096622239C86A00876659 /* ViewController.swift in Sources */,
