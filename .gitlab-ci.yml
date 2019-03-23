@@ -1,16 +1,7 @@
-before_script:
-  - bundle install
+stages:
+  - build
 
-test:2.1:
-  image: ruby:2.1
-  services:
-  - postgres:9.3
+build_project:
+  stage: build
   script:
-  - bundle exec rake spec
-
-test:2.2:
-  image: ruby:2.2
-  services:
-  - postgres:9.4
-  script:
-  - bundle exec rake spec
+    - xcodebuild clean -project Vision.xcodeproj -scheme Vision
