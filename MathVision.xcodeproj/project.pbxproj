@@ -15,6 +15,7 @@
 		84E649DE224A873D002201A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E649DC224A873D002201A4 /* LaunchScreen.storyboard */; };
 		84E649E9224A873E002201A4 /* MathVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E649E8224A873E002201A4 /* MathVisionTests.swift */; };
 		84E649F4224A873E002201A4 /* MathVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E649F3224A873E002201A4 /* MathVisionUITests.swift */; };
+		84E64A04224A8EC6002201A4 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 84E64A03224A8EC6002201A4 /* tessdata */; };
 		A1A34524CACE48260172A0D0 /* Pods_MathVisionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868B0B446C4B9A683589116F /* Pods_MathVisionUITests.framework */; };
 		C707627D90DEB02E190DFCE1 /* Pods_MathVisionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFA6AE7781ED3D027F0FF14 /* Pods_MathVisionTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		84E649EF224A873E002201A4 /* MathVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E649F3224A873E002201A4 /* MathVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathVisionUITests.swift; sourceTree = "<group>"; };
 		84E649F5224A873E002201A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E64A03224A8EC6002201A4 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = MathVision/tessdata; sourceTree = "<group>"; };
 		868B0B446C4B9A683589116F /* Pods_MathVisionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathVisionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		880847F7833E2F1607325D18 /* Pods-MathVisionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathVisionTests.release.xcconfig"; path = "Target Support Files/Pods-MathVisionTests/Pods-MathVisionTests.release.xcconfig"; sourceTree = "<group>"; };
 		D063E45D653C9A466663DCFB /* Pods-MathVisionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathVisionUITests.release.xcconfig"; path = "Target Support Files/Pods-MathVisionUITests/Pods-MathVisionUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		84E649C7224A8737002201A4 = {
 			isa = PBXGroup;
 			children = (
+				84E64A03224A8EC6002201A4 /* tessdata */,
 				84E649D2224A8737002201A4 /* MathVision */,
 				84E649E7224A873E002201A4 /* MathVisionTests */,
 				84E649F2224A873E002201A4 /* MathVisionUITests */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E649DE224A873D002201A4 /* LaunchScreen.storyboard in Resources */,
+				84E64A04224A8EC6002201A4 /* tessdata in Resources */,
 				84E649DB224A873D002201A4 /* Assets.xcassets in Resources */,
 				84E649D9224A8737002201A4 /* Main.storyboard in Resources */,
 			);
