@@ -14,6 +14,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* * * OCR tests * * */
+        let recognizer = OpticalCharacterRecognizer()
+        for i in 1...10 {
+            let image = UIImage(named: "Test\(i)")
+            
+            print("Output \(i):\n")
+            if let text = recognizer.recognizeText(image) {
+                print("\"\(text)\"")
+            } else {
+                print("< OCR Failed >")
+            }
+        }
+        /* * * OCR tests * * */
+        
     }
     
     

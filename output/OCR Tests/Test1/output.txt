@@ -1,0 +1,33 @@
+Output 1:
+
+"10 import UIKit
+
+11 import TesseractOCR
+
+12
+
+13 class ViewController: UIViewController {
+
+14
+
+15 override func viewDidLoadO {
+
+16 super. viewDid Load()
+
+17 // Do any additional setup after loading the View, typically from a nib.
+18
+
+19 print("Testing optical character recognition...")
+20
+
+21 }
+
+22
+
+23 }
+
+24
+
+25
+
+"
