@@ -1,4 +1,0 @@
-Testing optical character recognition...
-Output: xm
-XL
-x4l
