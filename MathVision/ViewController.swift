@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(solve(formula: "2x + 3", input: 5))
         /* * * OCR tests * * */
         let recognizer = OpticalCharacterRecognizer()
         for i in 1...10 {
