@@ -13,6 +13,16 @@ import Data.Char
 import Data.List
 
 
+-- This program works as follows:
+--  1. Receive input string                                 "a+b"
+--  2. Parse input                                          Sum [Char 'a', Char 'b']
+--  3. Derivative in terms of a character. If 'x', then     Sum [Num 0, Num 0]
+                                           If 'a', then     Sum [Num 1, Num 0]
+--  4. Simplify and canonicalize     Sum [Num 0, Num 0]   = Num 0
+                                     Sum [Num 1, Num 0]   = Num 1
+--  5. Unparse                                    Num 1   = "1"
+
+
 
 
 
@@ -29,7 +39,47 @@ data ME = Num Int
 
 
 
+-- Num, Var, Group, etc. are symbolic representations (≈ classes, structs) of
+-- Number, Variable, ( ), etc.
 
+
+-- Math expressions can be any of the following:
+
+-- Number
+--      "5"         ~   Num 5
+--      "123"       ~   Num 123
+
+-- Variable
+--      "x"         ~   Char 'x'
+
+-- Group
+--      "(x+2)"     ~   Group (Sum [Char 'x', Num 2])
+--      "(x)"       ~   Group (Char 'x')
+
+-- Sum
+--      "5+x"       ~   Sum [Num 5, Char 'x']
+--      "a+b+c+d+1" ~   Sum [Char 'a', Char 'b', Char 'c', Char 'd', Num 1]
+
+-- Product
+--      "5*x*(y)"   ~   Product [Num 5, Char 'x', Group (Char 'y')]
+
+-- Power
+--      "p^6"       ~   Power (Char 'p', Num 6)
+
+-- Negation
+--      "-x"        ~   Neg (Char 'x')
+--      "-(y+3)"    ~   Neg (Group (Sum [Char 'y', Num 3]))
+
+
+
+-- Derive each component individually, e.g.
+
+-- Derivative (in terms of 'x') of
+--      Num 5 = 0
+--      Char 'x'                = 1
+--      Char 'a'                = 0
+--      Group (Char 'x')        = (1)
+--      Sum [Num 5, Char 'x']   = 0+x
 
 
 -- Derivation
@@ -52,6 +102,14 @@ deriv (Neg me) c = Neg (deriv me c)
 
 
 
+
+
+
+-- Simplify expressions
+--      5       = 5
+--      x       = x
+--      5+5     = 10
+--      5+x     = 5+x
 
 
 -- Simplification
