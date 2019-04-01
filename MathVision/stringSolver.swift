@@ -8,7 +8,9 @@
 
 import Foundation
 
-func solve(formula: String, input: Int) -> Int {
+import Foundation
+
+func solve(formula: String, input: Float) -> NSNumber {
     let letterset = CharacterSet.letters
     let numberset = CharacterSet.decimalDigits
     var newformula = formula
@@ -16,13 +18,13 @@ func solve(formula: String, input: Int) -> Int {
         if letterset.contains(newformula.unicodeScalars[index]) {
             if(index > newformula.startIndex){
                 if numberset.contains(newformula.unicodeScalars[newformula.index(before: index)]) {
-                    newformula.insert("*", at: newformula.index(before: index))
-                    newformula.remove(at: index)
+                    newformula = newformula.replacingOccurrences(of: String(newformula[index]), with: String(input))
+                    newformula.insert("*", at: index)
                 }
             }
-            newformula = newformula.replacingOccurrences(of: String(newformula[index]), with: String(input))
+            
         }
     }
     let mathExpression = NSExpression(format: newformula)
-    return (mathExpression.expressionValue(with: nil, context: nil) as? Int)!
+    return (mathExpression.expressionValue(with: nil, context: nil) as? NSNumber)!
 }
