@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3072B8CF224EB04E008FCAC3 /* stringSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072B8CE224EB04E008FCAC3 /* stringSolver.swift */; };
 		7C0D401D850B9B6FE6A4B686 /* Pods_MathVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F89769BEEC0527183F80B9C /* Pods_MathVision.framework */; };
 		84E649D4224A8737002201A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E649D3224A8737002201A4 /* AppDelegate.swift */; };
 		84E649D6224A8737002201A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E649D5224A8737002201A4 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		15933024E07F50CD58100E33 /* Pods-MathVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathVision.debug.xcconfig"; path = "Target Support Files/Pods-MathVision/Pods-MathVision.debug.xcconfig"; sourceTree = "<group>"; };
+		3072B8CE224EB04E008FCAC3 /* stringSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringSolver.swift; sourceTree = "<group>"; };
 		3F89769BEEC0527183F80B9C /* Pods_MathVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFA6AE7781ED3D027F0FF14 /* Pods_MathVisionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathVisionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B81F2F5B4B5D14B1AC15DE3 /* Pods-MathVisionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathVisionTests.debug.xcconfig"; path = "Target Support Files/Pods-MathVisionTests/Pods-MathVisionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				84E649DA224A873D002201A4 /* Assets.xcassets */,
 				84E649DC224A873D002201A4 /* LaunchScreen.storyboard */,
 				84E649DF224A873D002201A4 /* Info.plist */,
+				3072B8CE224EB04E008FCAC3 /* stringSolver.swift */,
 			);
 			path = MathVision;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				84E64A06224AD975002201A4 /* Recognizer.swift in Sources */,
 				84E649D6224A8737002201A4 /* ViewController.swift in Sources */,
 				84E649D4224A8737002201A4 /* AppDelegate.swift in Sources */,
+				3072B8CF224EB04E008FCAC3 /* stringSolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
