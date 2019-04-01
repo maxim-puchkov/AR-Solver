@@ -21,6 +21,8 @@ func solve(formula: String, input: Float) -> NSNumber {
                     newformula = newformula.replacingOccurrences(of: String(newformula[index]), with: String(input))
                     newformula.insert("*", at: index)
                 }
+                else {
+                    newformula = newformula.replacingOccurrences(of: String(newformula[index]), with: String(input))                }
             }
             
         }
