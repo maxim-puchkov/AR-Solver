@@ -37,3 +37,28 @@ func solve(formula: String, input: Float) -> NSNumber {
     let mathExpression = NSExpression(format: newformula)
     return (mathExpression.expressionValue(with: nil, context: nil) as? NSNumber)!
 }
+
+func solveAll(OCRinput: String, input: Float) -> [String] {
+    var resultarray = [String]()
+    var temp = ""
+    var newtemp = ""
+    var flag = 0
+    for index in OCRinput.indices {
+        if(OCRinput[index] == "\n"){
+            temp = temp.replacingOccurrences(of: " ", with: "")
+            newtemp = "y = " + temp + " = " + String(solve(formula: temp, input: input).doubleValue) + " when x = " + String(input)
+            resultarray.append(newtemp)
+            temp = ""
+            flag = 0
+        }
+        if(OCRinput[index] == "="){
+            flag = 1
+            continue
+        }
+        if(flag == 1){
+            temp = temp + String(OCRinput[index])
+        }
+        
+    }
+    return resultarray
+}
