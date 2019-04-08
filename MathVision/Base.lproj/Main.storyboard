@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,111 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MathVision" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf3-A7-qgQ">
+                                <rect key="frame" x="138" y="337" width="99" height="30"/>
+                                <state key="normal" title="Choose Image"/>
+                                <connections>
+                                    <action selector="chooseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXD-mr-Ffr"/>
+                                    <segue destination="4Ml-Ej-tde" kind="show" id="0gO-hM-qsA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT7-yH-t9E">
+                                <rect key="frame" x="131" y="299" width="113" height="30"/>
+                                <state key="normal" title="Take New Image"/>
+                                <connections>
+                                    <action selector="takeNewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1EY-Ei-XXA"/>
+                                    <segue destination="4Ml-Ej-tde" kind="show" id="z6C-hc-Jx9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uf3-A7-qgQ" secondAttribute="bottom" constant="300" id="0aV-nc-99g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uf3-A7-qgQ" secondAttribute="trailing" constant="138" id="QYf-aX-LIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RT7-yH-t9E" secondAttribute="trailing" constant="131" id="SAM-TY-NQC"/>
+                            <constraint firstItem="RT7-yH-t9E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="279" id="dPM-6c-GJR"/>
+                            <constraint firstItem="Uf3-A7-qgQ" firstAttribute="top" secondItem="RT7-yH-t9E" secondAttribute="bottom" constant="8" id="fg3-oN-2qA"/>
+                            <constraint firstItem="Uf3-A7-qgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="gKO-MW-Ut7"/>
+                            <constraint firstItem="RT7-yH-t9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="veG-9m-p8e"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="Uf3-A7-qgQ" id="Rus-za-lJa"/>
+                        <outlet property="takeNewButton" destination="RT7-yH-t9E" id="XZy-Jl-Ica"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="598" y="25"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="1ao-5a-zA1">
+            <objects>
+                <viewController id="4Ml-Ej-tde" customClass="EditViewController" customModule="MathVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kqk-Ig-NhX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Recognzed text..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YPB-im-2TL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Y-pB-X56">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Solve"/>
+                                <connections>
+                                    <action selector="solveButtonPressed:" destination="4Ml-Ej-tde" eventType="touchUpInside" id="mP4-ce-yqm"/>
+                                    <segue destination="BQ4-QO-yzq" kind="show" id="Bjd-mi-eiC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Variable value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-aZ-o3K">
+                                <rect key="frame" x="118" y="579" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dlU-KA-4Q2"/>
+                    </view>
+                    <connections>
+                        <outlet property="solveButton" destination="D5Y-pB-X56" id="mu1-RO-X62"/>
+                        <outlet property="textView" destination="YPB-im-2TL" id="l1Z-gB-sJA"/>
+                        <outlet property="valueTextField" destination="HyZ-aZ-o3K" id="XLU-CK-REa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGH-e0-xQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="26.53673163418291"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="lAK-14-3hY">
+            <objects>
+                <viewController id="BQ4-QO-yzq" customClass="ResultViewController" customModule="MathVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uW-FZ-gui">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Vb2-1r-mvR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFM-j3-c2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2248" y="25"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0gO-hM-qsA"/>
+    </inferredMetricsTieBreakers>
 </document>

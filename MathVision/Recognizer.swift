@@ -33,7 +33,7 @@ class OpticalCharacterRecognizer: NSObject, OpticalCharacterRecognizerProtocol, 
     
     override init() {
         self.tess = G8Tesseract(language: self.language)
-        // self.tess.charWhitelist = self.whitelist
+        self.tess.charWhitelist = self.whitelist
         // self.tess.charBlacklist = self.blacklist
         
         super.init()
