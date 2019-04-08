@@ -23,7 +23,6 @@
                                 <state key="normal" title="Choose Image"/>
                                 <connections>
                                     <action selector="chooseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXD-mr-Ffr"/>
-                                    <segue destination="4Ml-Ej-tde" kind="show" id="0gO-hM-qsA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT7-yH-t9E">
@@ -31,7 +30,6 @@
                                 <state key="normal" title="Take New Image"/>
                                 <connections>
                                     <action selector="takeNewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1EY-Ei-XXA"/>
-                                    <segue destination="4Ml-Ej-tde" kind="show" id="z6C-hc-Jx9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +115,4 @@
             <point key="canvasLocation" x="2248" y="25"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="0gO-hM-qsA"/>
-    </inferredMetricsTieBreakers>
 </document>

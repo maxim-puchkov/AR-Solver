@@ -50,31 +50,41 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
         self.dismiss(animated: true, completion: { () -> Void in
-            
+            self.selectedImage = image
         })
         
-        self.selectedImage = image
     }
     
     
     
     @IBAction func chooseButtonPressed(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            print("Button capture")
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            print("Library capture")
             
             imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
+            imagePicker.sourceType = .photoLibrary
             imagePicker.allowsEditing = true
             
             present(imagePicker, animated: true, completion: nil)
         }
+        print("Library capture complete")
     }
     
     
     
     @IBAction func takeNewButtonPressed(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            print("Camera capture")
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = true
+            
+            present(imagePicker, animated: true, completion: nil)
+        }
+        print("Camera capture complete")
     }
     
     
