@@ -7,6 +7,7 @@ target 'MathVision' do
 
   # Pods for MathVision
   pod 'TesseractOCRiOS', '4.0.0'
+  pod 'Charts'
 
   target 'MathVisionTests' do
     inherit! :search_paths
