@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ResultViewController: ViewController {
+class ResultViewController: UIViewController {
     
     
     var text: String = ""

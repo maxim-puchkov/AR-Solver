@@ -9,7 +9,7 @@
 
 import UIKit
 
-class EditViewController: ViewController {
+class EditViewController: UIViewController {
     
     var image: UIImage? = nil
     
